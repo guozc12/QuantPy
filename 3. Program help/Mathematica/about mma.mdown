@@ -1,0 +1,6 @@
+# Use Mathematica(MMA) to achieve and process financial data
+* Seems it is easy to use MMA to do quant
+	* easy to achieve data
+	* easy to process data with inner function
+* python should be work as well
+* I should try both and find out which one is better
