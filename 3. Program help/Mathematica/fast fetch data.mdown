@@ -1,0 +1,4 @@
+# about using mathematica fetch financial data faster
+* As we mentioned before, directly using mma to fetch stock data is very slow, even with network with best condition(test in lab)
+* However, by Wolfram search engine, we can get historical data in few seconds.
+* I guess the reason is data source selection. So we can try to change the data source of Financial data function in mma.
