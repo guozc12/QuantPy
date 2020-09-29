@@ -1,0 +1,28 @@
+Candle plot data like day K is used to generate Expotential Moving Average (EMA). 
+Short period (within 1 day): 1min k, 3min k, 5min k, 15min k
+Medium period (>1 day, <5-10 day): 30min k, 60min k, 120min k, 4h k
+Medium-long period (>10 day, <30 day): day k
+Long period: week k, month k
+
+Day trading:
+5min k performs the best in day trading
+15min k indicates day-time bullish or bearish cycles
+
+Medium period trading: 
+120 k performs the best in indicating medium-period cycles
+Day k performs well in indicating bullish or bearish cycles within a year
+
+MACD strategies:
+1. In most cases, golden crossing is accurate in indicating the buy time.
+2. In most cases, dead crossing would be later than the best selling time.
+3. To determine the best selling time, we can try two strategies: 
+   3.1 Selling at the peak of the DIF line, or the time when MACD value is the largest/strarts to reduce; drawback: MACD value may keep positive and (probable) rise again.
+   3.2 Selling at the dead crossing of shorter-period MACD (e.g. for 120k MACD, use the dead crossing of 60k MACD to determine selling point); drawback: two times of data amount required.
+   More strategies? Test which selling strategy performs better? May miss earning opportunities.
+4. The trend in a shorter-period MACD must be within the trend in a longer-perid MACD. It means that longer-period MACD can predict longer momentum, trading decisions in shorter-period MACD should consider longer-period MACD trends.
+   Long up, short down: good for buying (following)
+   Long up, short up: time scope for a good selling
+   Long down, short down: perfect for buying if both have golden crossing; otherwise, may buy the short uptrend (risky).
+   Long down, short up: No action is needed. Not a good time for buying/selling.
+
+#Can we write the strategies into codes?
