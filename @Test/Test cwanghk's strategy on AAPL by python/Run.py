@@ -31,3 +31,24 @@ Todo:
    http://google.github.io/styleguide/pyguide.html
 
 """
+
+import pandas as pd
+import numpy as np
+import datetime
+import pandas_datareader.data as web
+import matplotlib.pyplot as plt
+
+# Import data
+# df = pd.read_csv('AAPL.csv')
+start = datetime.datetime(2020, 1, 1)
+stop = datetime.datetime(2020, 10, 6)
+df = web.DataReader("AAPL", "yahoo", start, stop)
+print(df.head())
+
+df['Capital'] = 1
+
+c_rate = 1.2 / 10000  # commission rate
+t_rate = 1 / 1000  # stamp duty rate
+
+df['ROI'] = df['Close']/df['Open']
+
