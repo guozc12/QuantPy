@@ -26,3 +26,6 @@ MACD strategies:
    Long down, short up: No action is needed. Not a good time for buying/selling.
 
 #Can we write the strategies into codes?
+
+A major flaw of MACD is that real MACD value may fluctuate around 0 before fixed. This may result in repeating false buy and sell behaviour.
+We must find a way to avoid this situation when coding MACD buy/sell logics.
