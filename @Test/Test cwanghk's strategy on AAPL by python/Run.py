@@ -42,7 +42,7 @@ import matplotlib.pyplot as plt
 # df = pd.read_csv('AAPL.csv')
 start = datetime.datetime(2020, 1, 1)
 stop = datetime.datetime(2020, 10, 6)
-df = web.DataReader("AAPL", "yahoo", start, stop)
+df = web.DataReader("AAPL", "iex", start, stop)
 print(df.head())
 
 df['Capital'] = 1
